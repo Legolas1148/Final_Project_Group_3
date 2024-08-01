@@ -9,9 +9,11 @@ namespace Final_Project_Group_3.Models
         {
         }
 
-        public DbSet<Final_Project_Group_3.Models.TeamMember> TeamMembers{ get; set; }
-        public DbSet<Final_Project_Group_3.Models.Hobby> Hobbies{ get; set; }
-        public DbSet<Final_Project_Group_3.Models.MGenre> MusicGenre{ get; set; }
-        public DbSet<Final_Project_Group_3.Models.Foods> FavoriteFoods{ get; set; }
+        public DbSet<TeamMember> TeamMembers { get; set; }
+        public DbSet<Hobby> Hobbies { get; set; }
+        public DbSet<MGenre> MusicGenre { get; set; }
+        public DbSet<Foods> FavoriteFoods { get; set; }
+        public DbSet<CollegeProgram> CollegePrograms { get; set; }
+        public DbSet<YearInProgram> YearsInProgram { get; set; }
     } 
 }
