@@ -1,8 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Final_Project_Group_3.Models;
 
 public class TeamMember
 {
-	public int TeamMemberId { get; set; }
+	[Key] public int TeamMemberId { get; set; }
 	public string FullName { get; set; }
 
 	/*Syntax for initializing DateTime objects is 
