@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<TeamProjectContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection")));
+builder.Services.AddDbContext<Final_Project_Group_3.Models.TeamProjectContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection")));
 
 var app = builder.Build();
 

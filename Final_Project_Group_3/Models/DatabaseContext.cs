@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Final_Project_Group_3.Data
+namespace Final_Project_Group_3.Models
 {
     public class TeamProjectContext : DbContext
     {
@@ -9,9 +9,9 @@ namespace Final_Project_Group_3.Data
         {
         }
 
-        public DbSet<TeamMember> TeamMembers{ get; set; }
-        public DbSet<Hobby> Hobbies{ get; set; }
-        public DbSet<MGenre> MusicGenre{ get; set; }
-        public DbSet<Foods> FavoriteFoods{ get; set; }
+        public DbSet<Final_Project_Group_3.Models.TeamMember> TeamMembers{ get; set; }
+        public DbSet<Final_Project_Group_3.Models.Hobby> Hobbies{ get; set; }
+        public DbSet<Final_Project_Group_3.Models.MGenre> MusicGenre{ get; set; }
+        public DbSet<Final_Project_Group_3.Models.Foods> FavoriteFoods{ get; set; }
     } 
 }
