@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Final_Project_Group_3.Models;
+using Final_Project_Group_3.Data;
+
 
 namespace Final_Project_Group_3.Controllers
 {
