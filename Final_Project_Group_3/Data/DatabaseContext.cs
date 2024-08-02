@@ -13,6 +13,8 @@ namespace Final_Project_Group_3.Data
         public DbSet<Models.Hobby> Hobbies { get; set; }
         public DbSet<Models.MGenre> MusicGenres { get; set; }
         public DbSet<Models.Foods> FavoriteFoods { get; set; }
+        // Other DbSets...
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +22,8 @@ namespace Final_Project_Group_3.Data
             modelBuilder.Entity<Models.Hobby>().ToTable("Hobbies");
             modelBuilder.Entity<Models.MGenre>().ToTable("MusicGenre");
             modelBuilder.Entity<Models.Foods>().ToTable("FavoriteFoods");
+            // Other configurations...
+
         }
     }
 }

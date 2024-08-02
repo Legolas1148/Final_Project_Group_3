@@ -1,3 +1,4 @@
+using Final_Project_Group_3.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Final_Project_Group_3.Controllers
