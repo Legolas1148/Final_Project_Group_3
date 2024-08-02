@@ -9,10 +9,10 @@ namespace Final_Project_Group_3.Data
         {
         }
 
-        public DbSet<Models.TeamMember> TeamMembers{ get; set; }
-        public DbSet<Models.Hobby> Hobbies{ get; set; }
-        public DbSet<Models.MGenre> MusicGenre{ get; set; }
-        public DbSet<Models.Foods> FavoriteFoods{ get; set; }
+        public DbSet<Models.TeamMember> TeamMembers { get; set; }
+        public DbSet<Models.Hobby> Hobbies { get; set; }
+        public DbSet<Models.MGenre> MusicGenre { get; set; }
+        public DbSet<Models.Foods> FavoriteFoods { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
