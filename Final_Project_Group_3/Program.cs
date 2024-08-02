@@ -1,15 +1,18 @@
+using Final_Project_Group_3.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSwaggerDocument();
+
+builder.Services.AddDbContext<TeamProjectContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection")));
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-builder.Services.AddDbContext<Final_Project_Group_3.Models.TeamProjectContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection")));
 
 var app = builder.Build();
 
@@ -18,8 +21,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseDeveloperExceptionPage();
     app.UseOpenApi();
+    app.UseSwaggerUi();
 }
 
 app.UseHttpsRedirection();
