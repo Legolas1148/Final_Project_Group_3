@@ -14,5 +14,7 @@ namespace Final_Project_Group_3.Models
         public string? Description { get; set; }
         
         public int YearsPracticed { get; set; }
+
+        public string? Category { get; set; }
     }
 }
