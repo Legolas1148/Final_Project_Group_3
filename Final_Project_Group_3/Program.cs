@@ -7,7 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSwaggerDocument();
 
 builder.Services.AddDbContext<TeamProjectContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-System.Console.Write(builder.Configuration.GetConnectionString("DefaultConnection"));
 
 builder.Services.AddControllers();
 

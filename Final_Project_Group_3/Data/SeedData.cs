@@ -35,9 +35,9 @@ namespace Final_Project_Group_3.Data
                     new TeamMember
                     {
                         FullName = "Taka Kiuchi",
-                        Birthdate = new DateTime(1999, 1, 1),
+                        Birthdate = new DateTime(2003, 7, 29),
                         CollegeProgram = "Information Technology",
-                        YearInProgram = "Sophomore"
+                        YearInProgram = "Pre-Junior"
                     },
                     new TeamMember
                     {
@@ -55,8 +55,7 @@ namespace Final_Project_Group_3.Data
                         HobbyName = "Playing Video Games",
                         Description = "I like to play video games in my free time.",
                         YearsPracticed = 15,
-                        Category = "Indoor",
-                        TeamMemberId = 1
+                        Category = "Indoor"
                     },
                     new Hobby
                     {
@@ -64,17 +63,15 @@ namespace Final_Project_Group_3.Data
                         HobbyName = "Watching Movies",
                         Description = "I like to watch movies in my free time.",
                         YearsPracticed = 10,
-                        Category = "Indoor",
-                        TeamMemberId = 2
+                        Category = "Indoor"
                     },
                     new Hobby
                     {
                         FullName = "Taka Kiuchi",
-                        HobbyName = "Playing Soccer",
-                        Description = "I like to play soccer in my free time.",
-                        YearsPracticed = 10,
-                        Category = "Outdoor",
-                        TeamMemberId = 3
+                        HobbyName = "Cooking",
+                        Description = "I like to cook in my free time",
+                        YearsPracticed = 5,
+                        Category = "Indoor"
                     },
                     new Hobby
                     {
@@ -82,8 +79,7 @@ namespace Final_Project_Group_3.Data
                         HobbyName = "Playing Cricket",
                         Description = "I like to play cricket in my free time.",
                         YearsPracticed = 10,
-                        Category = "Outdoor",
-                        TeamMemberId = 4
+                        Category = "Outdoor"
                     }
                 );
 
@@ -93,39 +89,34 @@ namespace Final_Project_Group_3.Data
                         FullName = "Niteesh Rawal",
                         MusicGenre= "Classical",
                         GenreDescription = "Classical music is a genre of music that is typically composed in a more traditional style.",
-                        Popularity = 5,
-                        TeamMemberId = 1
+                        Popularity = 5
                     },
                     new MGenre
                     {
                         FullName = "Grant Perry",
                         MusicGenre = "Rock",
                         GenreDescription = "Rock music is a genre of music that is typically composed with electric guitars and drums.",
-                        Popularity = 5,
-                        TeamMemberId = 2
+                        Popularity = 5
                     },
                     new MGenre
                     {
                         FullName = "Taka Kiuchi",
                         MusicGenre = "Jazz",
                         GenreDescription = "Jazz music is a genre of music that is typically composed with saxophones and trumpets.",
-                        Popularity = 5,
-                        TeamMemberId = 3
+                        Popularity = 5
                     },
                     new MGenre
                     {
                         FullName = "Kshitij Maurya",
                         MusicGenre = "Pop",
                         GenreDescription = "Pop music is a genre of music that is typically composed with catchy tunes and lyrics.",
-                        Popularity = 5,
-                        TeamMemberId = 4
+                        Popularity = 5
                     }
                 );
 
                 context.FavoriteFoods.AddRange(
                     new Foods
                     {
-                        TeamMemberId = 1,
                         FullName = "Niteesh Rawal",
                         FavoriteFoodName = "Mac and Cheese",
                         Type = "Fast Food",
@@ -133,7 +124,6 @@ namespace Final_Project_Group_3.Data
                     },
                     new Foods
                     {
-                        TeamMemberId = 2,
                         FullName = "Grant Perry",
                         FavoriteFoodName = "Pancakes",
                         Type = "Fast Food",
@@ -141,15 +131,13 @@ namespace Final_Project_Group_3.Data
                     },
                     new Foods
                     {
-                        TeamMemberId = 3,
                         FullName = "Taka Kiuchi",
                         FavoriteFoodName = "Burrito",
                         Type = "Fast Food",
                         Calories = 300
                     },
                     new Foods
-                    {
-                        TeamMemberId = 4,
+                    { 
                         FullName = "Kshitij Maurya",
                         FavoriteFoodName = "Taco",
                         Type = "Fast Food",
