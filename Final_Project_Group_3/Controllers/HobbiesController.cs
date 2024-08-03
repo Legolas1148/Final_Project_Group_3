@@ -45,14 +45,14 @@ namespace Final_Project_Group_3.Controllers
             _context.Hobbies.Add(hobby);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetHobbies), new { id = hobby.Id }, hobby);
+            return CreatedAtAction(nameof(GetHobbies), new { id = hobby.TeamMemberId }, hobby);
         }
 
         // PUT: api/Hobbies/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutHobby(int id, Hobby hobby)
         {
-            if (id != hobby.Id)
+            if (id != hobby.TeamMemberId)
             {
                 return BadRequest();
             }
@@ -96,7 +96,7 @@ namespace Final_Project_Group_3.Controllers
 
         private bool HobbyExists(int id)
         {
-            return _context.Hobbies.Any(e => e.Id == id);
+            return _context.Hobbies.Any(e => e.TeamMemberId == id);
         }
     }
 }
